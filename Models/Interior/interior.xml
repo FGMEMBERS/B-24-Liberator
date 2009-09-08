@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourvitres</object-name>
+    <object-name>inttourelle</object-name>
+    <object-name>planchet</object-name>
+    <object-name>intsouteG1</object-name>
+    <object-name>intsouteG2</object-name>
+    <object-name>intsouteD1</object-name>
+    <object-name>intsouteD2</object-name>
+    <object-name>montants</object-name>
+    <object-name>inttourelletail</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -6.583 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.052 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -7.198 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.114 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg>  0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Soute à bombes -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intsouteG1</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 120 </factor>
+    <axis>
+      <x1-m> -1.880 </x1-m>
+      <y1-m> -1.061 </y1-m>
+      <z1-m> -1.722 </z1-m>
+      <x2-m> -4.385 </x2-m>
+      <y2-m> -1.061 </y2-m>
+      <z2-m> -1.753 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intsouteG2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 120 </factor>
+    <axis>
+      <x1-m>  0.968 </x1-m>
+      <y1-m> -1.009 </y1-m>
+      <z1-m> -1.619 </z1-m>
+      <x2-m> -1.733 </x2-m>
+      <y2-m> -1.061 </y2-m>
+      <z2-m> -1.720 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intsouteD1</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> -120 </factor>
+    <axis>
+      <x1-m> -1.880 </x1-m>
+      <y1-m>  1.061 </y1-m>
+      <z1-m> -1.722 </z1-m>
+      <x2-m> -4.385 </x2-m>
+      <y2-m>  1.061 </y2-m>
+      <z2-m> -1.753 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intsouteD2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> -120 </factor>
+    <axis>
+      <x1-m>  0.968 </x1-m>
+      <y1-m>  1.009 </y1-m>
+      <z1-m> -1.619 </z1-m>
+      <x2-m> -1.733 </x2-m>
+      <y2-m>  1.061 </y2-m>
+      <z2-m> -1.720 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- All bombs -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Interior/all-bombs.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
