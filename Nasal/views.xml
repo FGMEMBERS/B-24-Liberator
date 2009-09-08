@@ -49,15 +49,51 @@
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
       <pitch-offset-deg>-5</pitch-offset-deg>
       <x-offset-m archive="y">  0.000 </x-offset-m>	<!-- Right -->
-      <y-offset-m archive="y">  1.076 </y-offset-m>	<!-- Up    -->
-      <z-offset-m archive="y"> 10.488 </z-offset-m>	<!-- Back  -->
+      <y-offset-m archive="y">  0.503 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y">  9.904 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> 0 </pitch-offset-deg>
       <heading-offset-deg>180</heading-offset-deg>
       <default-field-of-view-deg>55</default-field-of-view-deg>
     </config>
   </view>
 
+  <view n="103">
+    <name>Left side Gunner</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y"> -0.374 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y"> -0.017 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y">  3.627 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> 0 </pitch-offset-deg>
+      <heading-offset-deg>270</heading-offset-deg>
+      <default-field-of-view-deg>55</default-field-of-view-deg>
+    </config>
+  </view>
+
   <view n="104">
+    <name>Right side Gunner</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y">  0.374 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y"> -0.017 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y">  3.627 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> 0 </pitch-offset-deg>
+      <heading-offset-deg>90</heading-offset-deg>
+      <default-field-of-view-deg>55</default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="105">
     <name>Tail Camera View</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
