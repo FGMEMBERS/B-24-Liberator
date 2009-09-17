@@ -55,6 +55,7 @@
     <object-name>souteD2</object-name>
     <object-name>tourelletail</object-name>
     <object-name>guns</object-name>
+    <object-name>antenne</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -135,6 +136,7 @@
     <object-name>souteD2</object-name>
     <object-name>tourelletail</object-name>
     <object-name>guns</object-name>
+    <object-name>antenne</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
