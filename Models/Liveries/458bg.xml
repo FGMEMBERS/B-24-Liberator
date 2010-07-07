@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <PropertyList>
   <sim>
     <model>
       <livery>
-        <name type="string">The Goon, 308th BG</name>
-        <texture>Liveries/goon.png</texture>
+        <name type="string">458BG Formation Ship</name>
+        <texture>Liveries/458bg.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
