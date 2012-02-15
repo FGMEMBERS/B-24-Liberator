@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-************************************************************************
-Boeing b24
-May  2008 BARANGER Emmanuel
-June 2010 BARANGER Emmanuel
-************************************************************************
--->
 
 <PropertyList include="b24-base.xml">
 
   <sim>
 
     <description>B 24 Liberator (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>b24-yasim</aero>
 

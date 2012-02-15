@@ -106,7 +106,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/man/manL.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.045 </y-m>
       <z-m>  0.103 </z-m>
     </offsets>
@@ -116,7 +116,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/man/manR.xml</path>
     <offsets>
-      <x-m> 0.016 </x-m>
+      <x-m> 0.015 </x-m>
       <y-m> 0.075 </y-m>
       <z-m> 0.103 </z-m>
     </offsets>
@@ -126,7 +126,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/rpm/rpmL.xml</path>
     <offsets>
-      <x-m> 0.016 </x-m>
+      <x-m> 0.015 </x-m>
       <y-m> 0.215 </y-m>
       <z-m> 0.102 </z-m>
     </offsets>
@@ -136,7 +136,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/rpm/rpmR.xml</path>
     <offsets>
-      <x-m> 0.016 </x-m>
+      <x-m> 0.015 </x-m>
       <y-m> 0.325 </y-m>
       <z-m> 0.102 </z-m>
     </offsets>
@@ -156,7 +156,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.021 </x-m>
+      <x-m>  0.020 </x-m>
       <y-m> -0.486 </y-m>
       <z-m> -0.078 </z-m>
     </offsets>
@@ -176,7 +176,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.022 </x-m>
+      <x-m>  0.020 </x-m>
       <y-m> -0.224 </y-m>
       <z-m> -0.076 </z-m>
     </offsets>
@@ -186,7 +186,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.022 </x-m>
+      <x-m>  0.020 </x-m>
       <y-m> -0.451 </y-m>
       <z-m>  0.077 </z-m>
     </offsets>
@@ -196,7 +196,7 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
     <offsets>
-      <x-m>  0.017 </x-m>
+      <x-m>  0.020 </x-m>
       <y-m> -0.106 </y-m>
       <z-m> -0.008 </z-m>
     </offsets>
@@ -206,11 +206,17 @@
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.020 </x-m>
       <y-m>  0.005 </y-m>
       <z-m> -0.008 </z-m>
     </offsets>
   </model>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 20 </max-m>
+  </animation>
 
 </PropertyList>
 

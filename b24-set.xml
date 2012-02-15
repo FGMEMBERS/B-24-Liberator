@@ -4,8 +4,17 @@
 <PropertyList include="b24-yasim-cnf.xml">
 
   <sim>
-    <description>B 24 Liberator</description>
-    <author>BARANGER Emmanuel</author>
+
+    <description>B 24 Liberator (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 1 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
   </sim>
 
 </PropertyList>

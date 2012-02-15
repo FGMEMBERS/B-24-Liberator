@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/B-24-Liberator/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -23,30 +37,14 @@
     <object-name>voletD</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
-    <object-name>axeAB</object-name>
-    <object-name>roueA</object-name>
-    <object-name>axeGH</object-name>
-    <object-name>axeGB</object-name>
-    <object-name>porteG</object-name>
-    <object-name>roueG</object-name>
-    <object-name>axeDH</object-name>
-    <object-name>axeDB</object-name>
     <object-name>porteD</object-name>
-    <object-name>roueD</object-name>
+    <object-name>porteG</object-name>
     <object-name>ailes2</object-name>
     <object-name>derives</object-name>
     <object-name>moteurs</object-name>
     <object-name>profondeur</object-name>
     <object-name>directionG</object-name>
     <object-name>directionD</object-name>
-    <object-name>heliceGE</object-name>
-    <object-name>bolGE</object-name>
-    <object-name>heliceGI</object-name>
-    <object-name>bolGI</object-name>
-    <object-name>heliceDI</object-name>
-    <object-name>bolDI</object-name>
-    <object-name>heliceDE</object-name>
-    <object-name>bolDE</object-name>
     <object-name>tourvitres</object-name>
     <object-name>tourelle</object-name>
     <object-name>souteG1</object-name>
@@ -54,8 +52,26 @@
     <object-name>souteD1</object-name>
     <object-name>souteD2</object-name>
     <object-name>tourelletail</object-name>
-    <object-name>guns</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>bolDE</object-name>
     <object-name>antenne</object-name>
+
+    <object-name>axeAB</object-name>
+    <object-name>roueA</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>roueD</object-name>
+    <object-name>heliceGE</object-name>
+    <object-name>heliceGI</object-name>
+    <object-name>heliceDI</object-name>
+    <object-name>heliceDE</object-name>
+    <object-name>trous</object-name>
+    <object-name>guns</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -81,30 +97,14 @@
     <object-name>voletD</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
-    <object-name>axeAB</object-name>
-    <object-name>roueA</object-name>
-    <object-name>axeGH</object-name>
-    <object-name>axeGB</object-name>
-    <object-name>porteG</object-name>
-    <object-name>roueG</object-name>
-    <object-name>axeDH</object-name>
-    <object-name>axeDB</object-name>
     <object-name>porteD</object-name>
-    <object-name>roueD</object-name>
+    <object-name>porteG</object-name>
     <object-name>ailes2</object-name>
     <object-name>derives</object-name>
     <object-name>moteurs</object-name>
     <object-name>profondeur</object-name>
     <object-name>directionG</object-name>
     <object-name>directionD</object-name>
-    <object-name>heliceGE</object-name>
-    <object-name>bolGE</object-name>
-    <object-name>heliceGI</object-name>
-    <object-name>bolGI</object-name>
-    <object-name>heliceDI</object-name>
-    <object-name>bolDI</object-name>
-    <object-name>heliceDE</object-name>
-    <object-name>bolDE</object-name>
     <object-name>tourvitres</object-name>
     <object-name>tourelle</object-name>
     <object-name>souteG1</object-name>
@@ -112,8 +112,26 @@
     <object-name>souteD1</object-name>
     <object-name>souteD2</object-name>
     <object-name>tourelletail</object-name>
-    <object-name>guns</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>bolDE</object-name>
     <object-name>antenne</object-name>
+
+    <object-name>axeAB</object-name>
+    <object-name>roueA</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>roueD</object-name>
+    <object-name>heliceGE</object-name>
+    <object-name>heliceGI</object-name>
+    <object-name>heliceDI</object-name>
+    <object-name>heliceDE</object-name>
+    <object-name>trous</object-name>
+    <object-name>guns</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -159,18 +177,14 @@
     <object-name>voletD</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
-    <object-name>porteG</object-name>
     <object-name>porteD</object-name>
+    <object-name>porteG</object-name>
     <object-name>ailes2</object-name>
     <object-name>derives</object-name>
     <object-name>moteurs</object-name>
     <object-name>profondeur</object-name>
     <object-name>directionG</object-name>
     <object-name>directionD</object-name>
-    <object-name>bolGE</object-name>
-    <object-name>bolGI</object-name>
-    <object-name>bolDI</object-name>
-    <object-name>bolDE</object-name>
     <object-name>tourvitres</object-name>
     <object-name>tourelle</object-name>
     <object-name>souteG1</object-name>
@@ -178,6 +192,10 @@
     <object-name>souteD1</object-name>
     <object-name>souteD2</object-name>
     <object-name>tourelletail</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>bolDE</object-name>
     <object-name>antenne</object-name>
   </effect>
 
@@ -204,18 +222,95 @@
     <object-name>cables</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.650 </z-m>
+    </offsets>
+  </model>
+
   <!-- Intérieur -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Cranking -->
+  <!-- Left exterior -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/cranking/all-crankingLE.xml</path>
+    <offsets> 
+      <x-m> -4.040 </x-m>
+      <y-m> -7.911 </y-m>
+      <z-m>  0.160 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Left interior -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/cranking/all-crankingLI.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
+      <x-m> -4.040 </x-m>
+      <y-m> -3.432 </y-m>
+      <z-m>  0.095 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right interior -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/cranking/all-crankingRI.xml</path>
+    <offsets>
+      <x-m> -4.040 </x-m>
+      <y-m>  3.432 </y-m>
+      <z-m>  0.095 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right exterior -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/cranking/all-crankingRE.xml</path>
+    <offsets> 
+      <x-m> -4.040 </x-m>
+      <y-m>  7.911 </y-m>
+      <z-m>  0.160 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -7.034 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.868 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roues gauches -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -2.284 </x-m>
+      <y-m> -3.963 </y-m>
+      <z-m> -2.830 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roues droites -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -2.284 </x-m>
+      <y-m>  3.963 </y-m>
+      <z-m> -2.830 </z-m>
     </offsets>
   </model>
 
   <!-- Moteurs -->
-  <!-- Extérieur gauche -->
+  <!-- Left exterior -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Engines/r1830.xml</path>
     <offsets>
@@ -225,7 +320,7 @@
     </offsets>
   </model>
 
-  <!-- Intérieur gauche -->
+  <!-- Left interior -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Engines/r1830.xml</path>
     <offsets>
@@ -235,7 +330,7 @@
     </offsets>
   </model>
 
-  <!-- Intérieur droit -->
+  <!-- Right interior -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Engines/r1830.xml</path>
     <offsets>
@@ -245,7 +340,7 @@
     </offsets>
   </model>
 
-  <!-- Extérieur droit -->
+  <!-- Right exterior -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Engines/r1830.xml</path>
     <offsets>
@@ -270,7 +365,7 @@
     <object-name>propdiscGE</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1100</value>
       </greater-than>
     </condition>
@@ -282,11 +377,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>500.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1100.001</value>
       </less-than>
     </and>
@@ -298,7 +393,7 @@
     <object-name>heliceGE</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1100</value>
       </less-than>
     </condition>
@@ -307,7 +402,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGE</object-name>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -5.413 </x-m>
@@ -335,7 +430,7 @@
     <object-name>propdiscGI</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[1]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <value>1100</value>
       </greater-than>
     </condition>
@@ -347,11 +442,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[1]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <value>500.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[1]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <value>1100.001</value>
       </less-than>
     </and>
@@ -363,7 +458,7 @@
     <object-name>heliceGI</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[1]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <value>1100</value>
       </less-than>
     </condition>
@@ -372,7 +467,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGI</object-name>
-    <property>/engines/engine[1]/rpm</property>
+    <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -5.783 </x-m>
@@ -400,7 +495,7 @@
     <object-name>propdiscDI</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[2]/rpm</property>
+        <property>engines/engine[2]/rpm</property>
         <value>1100</value>
       </greater-than>
     </condition>
@@ -412,11 +507,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[2]/rpm</property>
+        <property>engines/engine[2]/rpm</property>
         <value>500.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[2]/rpm</property>
+        <property>engines/engine[2]/rpm</property>
         <value>1100.001</value>
       </less-than>
     </and>
@@ -428,7 +523,7 @@
     <object-name>heliceDI</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[2]/rpm</property>
+        <property>engines/engine[2]/rpm</property>
         <value>1100</value>
       </less-than>
     </condition>
@@ -465,7 +560,7 @@
     <object-name>propdiscDE</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[3]/rpm</property>
+        <property>engines/engine[3]/rpm</property>
         <value>1100</value>
       </greater-than>
     </condition>
@@ -477,11 +572,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[3]/rpm</property>
+        <property>engines/engine[3]/rpm</property>
         <value>500.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[3]/rpm</property>
+        <property>engines/engine[3]/rpm</property>
         <value>1100.001</value>
       </less-than>
     </and>
@@ -493,7 +588,7 @@
     <object-name>heliceDE</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[3]/rpm</property>
+        <property>engines/engine[3]/rpm</property>
         <value>1100</value>
       </less-than>
     </condition>
@@ -502,7 +597,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteDE</object-name>
-    <property>/engines/engine[3]/rpm</property>
+    <property>engines/engine[3]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -5.413 </x-m>
@@ -520,7 +615,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronG</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <factor> 15 </factor>
     <axis>
       <x1-m>  -1.652 </x1-m>
@@ -535,7 +630,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     <factor> 15 </factor>
     <axis>
       <x1-m> -1.162 </x1-m>
@@ -551,7 +646,7 @@
   <animation>
     <type>rotate</type>
     <object-name>directionG</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> 20 </factor>
     <center>
       <x-m>  8.719 </x-m>
@@ -568,7 +663,7 @@
   <animation>
     <type>rotate</type>
     <object-name>directionD</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> 20 </factor>
     <center>
       <x-m> 8.719 </x-m>
@@ -586,7 +681,7 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>/surface-positions/elevator-pos-norm</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <factor> 20 </factor>
     <center>
      <x-m> 8.089 </x-m>
@@ -604,7 +699,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> -45 </factor>
     <axis>
       <x1-m> -1.190 </x1-m>
@@ -619,7 +714,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> -45 </factor>
     <axis>
       <x1-m> -0.406 </x1-m>
@@ -641,7 +736,7 @@
   <animation>
     <type>translate</type>
     <object-name>TrainAvant</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.93 </dep></entry>
       <entry><ind> 1.0 </ind><dep>  0.00 </dep></entry>
@@ -656,7 +751,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteAG</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.3 </ind><dep> 150 </dep></entry>
@@ -675,7 +770,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteAD</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.3 </ind><dep> 150 </dep></entry>
@@ -702,7 +797,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainGauche</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> -93 </dep></entry>
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
@@ -730,7 +825,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainDroit</object-name>
-    <property>/gear/gear[2]/position-norm</property>
+    <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 93 </dep></entry>
       <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
@@ -757,7 +852,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueAvant</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
       <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
@@ -779,7 +874,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueGauche</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
       <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
@@ -801,7 +896,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueDroite</object-name>
-    <property>/gear/gear[2]/compression-norm</property>
+    <property>gear/gear[2]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
       <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
@@ -818,7 +913,7 @@
   <animation>
     <type>rotate</type>
     <object-name>RoueAvant</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> 30 </factor>
     <center>
       <x-m> -7.034 </x-m>
@@ -836,7 +931,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>/gear/gear[0]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -7.034 </x-m>
@@ -853,7 +948,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -2.284 </x-m>
@@ -870,7 +965,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>/gear/gear[2]/rollspeed-ms</property>
+    <property>gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -2.284 </x-m>
@@ -888,7 +983,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteG1</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> 120 </factor>
     <axis>
       <x1-m> -1.880 </x1-m>
@@ -903,7 +998,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteG2</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> 120 </factor>
     <axis>
       <x1-m>  0.968 </x1-m>
@@ -918,7 +1013,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteD1</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> -120 </factor>
     <axis>
       <x1-m> -1.880 </x1-m>
@@ -933,7 +1028,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteD2</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> -120 </factor>
     <axis>
       <x1-m>  0.968 </x1-m>
