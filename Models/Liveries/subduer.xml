@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">240891 All Weather Flying Center</name>
-        <texture>Liveries/240891.png</texture>
+        <name type="string">PB4Y-1 (Subduer) of VPB107, Natal, Brazil 1943</name>
+        <texture>Liveries/subduer.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>

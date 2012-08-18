@@ -22,3 +22,13 @@ These liveries were made by : Eric Starr 2010
 
 Thanks to him
 
+AL506RAF     : Liberator RAF 1942 AL506
+
+subduer      : PB4Y-1 “Subduer” of VPB107, Natal, Brazil 1943
+
+YB-24texture : YB-24 (Prototype)
+
+These liveries were made by : Herve 2012
+
+Thanks to him
+

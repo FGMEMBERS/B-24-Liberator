@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">240891 All Weather Flying Center</name>
-        <texture>Liveries/240891.png</texture>
+        <name type="string">Liberator RAF 1942 AL506</name>
+        <texture>Liveries/AL506RAF.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
