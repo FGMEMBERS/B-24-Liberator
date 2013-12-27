@@ -12,6 +12,8 @@ raf
 
 NAMU
 
+subduer      : PB4Y-1 “Subduer” of VPB107, Natal, Brazil 1943
+
 These liveries were made by : Brett HARRISON 2009/2010
 
 Thanks to him
@@ -23,8 +25,6 @@ These liveries were made by : Eric Starr 2010
 Thanks to him
 
 AL506RAF     : Liberator RAF 1942 AL506
-
-subduer      : PB4Y-1 “Subduer” of VPB107, Natal, Brazil 1943
 
 YB-24texture : YB-24 (Prototype)
 

@@ -7,16 +7,16 @@
     <model>
       <livery>
         <name type="string">Liberator RAF 1942 AL506</name>
-        <texture>Liveries/AL506RAF.png</texture>
+        <texture>Liveries/1024x1024/AL506RAF.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
         <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
+          <red>   0.02 </red>
+          <green> 0.02 </green>
+          <blue>  0.02 </blue>
         </emission>
       </livery>
     </model>

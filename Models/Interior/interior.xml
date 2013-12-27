@@ -37,6 +37,16 @@
     <object-name>intvitretourelle</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
+  </effect>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Pilot/pilot.xml</path>
@@ -44,9 +54,6 @@
       <x-m> -6.583 </x-m>
       <y-m> -0.397 </y-m>
       <z-m>  0.052 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -57,17 +64,36 @@
       <x-m> -7.198 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.114 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
-      <heading-deg>  0 </heading-deg>
     </offsets>
   </model>
 
   <!-- Soute à bombes -->
   <animation>
+    <name>IntToutesLesSoutes</name>
+    <object-name>intsouteG1</object-name>
+    <object-name>intsouteG2</object-name>
+    <object-name>intsouteD1</object-name>
+    <object-name>intsouteD2</object-name>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>IntToutesLesSoutes</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>intsouteG1</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 120 </factor>
     <axis>
       <x1-m> -1.880 </x1-m>
@@ -82,7 +108,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intsouteG2</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 120 </factor>
     <axis>
       <x1-m>  0.968 </x1-m>
@@ -97,7 +123,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intsouteD1</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -120 </factor>
     <axis>
       <x1-m> -1.880 </x1-m>
@@ -112,7 +138,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intsouteD2</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -120 </factor>
     <axis>
       <x1-m>  0.968 </x1-m>
@@ -126,13 +152,7 @@
 
   <!-- All bombs -->
   <model>
-    <path>Aircraft/B-24-Liberator/Models/Interior/all-bombs.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
+    <path>Aircraft/B-24-Liberator/Models/weapons/all-bombs.xml</path>
   </model>
 
 </PropertyList>
-

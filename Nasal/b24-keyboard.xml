@@ -7,12 +7,12 @@
     <desc>Bomb bay door</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.doorsystem.crewexport();</script>
+      <script>doors.crew.toggle();</script>
     </binding>
   </key>
 
-  <key n="10">
-    <name>Ctrl-j</name>
+  <key n="101">
+    <name>e</name>
     <desc>Jump signal</desc>
     <binding>
       <command>property-assign</command>
@@ -52,4 +52,3 @@
   </key>
 
 </PropertyList>
-

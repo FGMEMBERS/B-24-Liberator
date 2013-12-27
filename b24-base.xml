@@ -4,6 +4,7 @@
 
   <sim include="Nasal/views.xml">
 
+    <description>B 24 Liberator (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), StuartC (FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
@@ -67,7 +68,7 @@
         <desc>Open/Close bimb bay door</desc>
       </key>
       <key>
-        <name>Ctrl-j</name>
+        <name>e</name>
         <desc>Release bomb</desc>
       </key>
     </help>

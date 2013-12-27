@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 7
 OBJECT poly
@@ -7,8 +7,8 @@ name "boite"
 loc 0.390268 -0.180061 -0.13707
 data 5
 boite
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
 -0.045943 0.066166 -0.022492
@@ -153,8 +153,8 @@ name "console"
 loc 0.252536 -0.098472 -0.000232
 data 7
 console
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 736
 0.170183 0.016586 -0.012764
@@ -6865,8 +6865,8 @@ name "panel"
 loc 0.019762 0.022891 0.105764
 data 5
 panel
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 460
 0.002399 0.128602 -0.248202
@@ -9825,8 +9825,8 @@ name "trimail"
 loc 0.518697 -0.211991 -0
 data 7
 trimail
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 770
 0.00889 0.048011 -0.048011
@@ -16142,8 +16142,8 @@ name "trimprof"
 loc 0.396169 -0.185959 0.150547
 data 8
 trimprof
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 770
 0.048012 0.048011 0.008891
@@ -22459,8 +22459,8 @@ name "volantD"
 loc 0.267828 0.017983 -0.397
 data 7
 volantD
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 851
 0.004597 0.12954 0.163294
@@ -28633,8 +28633,8 @@ name "volantG"
 loc 0.267828 0.017983 0.397167
 data 7
 volantG
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 851
 0.004597 0.12954 0.163294
