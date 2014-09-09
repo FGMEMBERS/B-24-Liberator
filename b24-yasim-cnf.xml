@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="b24-base.xml">
+
+  <sim>
+
+    <description>B 24 Liberator (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), StuartC (FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>b24-yasim</aero>
+
+  </sim>
+
+</PropertyList>
+
