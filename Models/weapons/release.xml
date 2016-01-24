@@ -7,11 +7,11 @@
     <model>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</model>
     <condition>
       <equals>
-        <property>/instrumentation/doors/crew/position-norm</property>
+	<property>sim/model/door-positions/bomb</property>
 	<value>1</value>
       </equals>
     </condition>
-    <trigger>controls/signal</trigger>
+    <trigger>controls/armament/release-all</trigger>
     <speed-prop>
       <property>/velocities/airspeed-kt</property>
     </speed-prop>
