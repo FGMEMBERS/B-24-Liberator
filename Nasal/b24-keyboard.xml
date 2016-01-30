@@ -2,23 +2,40 @@
 
 <PropertyList>
 
+  <key n="2">
+    <name>Ctrl-B</name>
+    <desc>Release Bombs</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/armament/release-all</property>
+      <value type="bool">1</value>
+    </binding>
+  </key>
+
   <key n="100">
     <name>d</name>
     <desc>Bomb bay door</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.crew.toggle();</script>
+      <script>doors.bomb.toggle();</script>
     </binding>
   </key>
 
   <key n="101">
     <name>e</name>
-    <desc>Jump signal</desc>
+    <desc>Fire machine guns</desc>
     <binding>
       <command>property-assign</command>
-      <property>controls/signal</property>
-      <value>true</value>
+      <property>controls/armament/trigger</property>
+      <value>1</value>
     </binding>
+    <mod-up>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/armament/trigger</property>
+        <value>0</value>
+      </binding>
+    </mod-up>
   </key>
 
   <key n="102">

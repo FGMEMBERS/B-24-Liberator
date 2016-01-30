@@ -22,5 +22,24 @@
     </emission>
   </animation>
 
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/Guns/tracer.xml</path>
+    <name>tracer</name>
+    <nopreview/>
+    <offsets> 
+      <x-m>-1</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>tracer</object-name>
+    <condition>
+      <property>controls/armament/trigger</property>
+    </condition>
+  </animation>
+
 </PropertyList>
 

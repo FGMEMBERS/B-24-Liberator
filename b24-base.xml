@@ -43,8 +43,7 @@
         <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="0" alias="sim/model/door-positions/bomb/position-norm"/>
         <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
         <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
         <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
@@ -65,11 +64,15 @@
       <title>B 24 Liberator</title>
       <key>
         <name>d</name>
-        <desc>Open/Close bimb bay door</desc>
+        <desc>Open/Close bomb bay door</desc>
+      </key>
+      <key>
+        <name>Ctrl+B</name>
+        <desc>Release Bombs</desc>
       </key>
       <key>
         <name>e</name>
-        <desc>Release bomb</desc>
+        <desc>Fire machine guns</desc>
       </key>
     </help>
 

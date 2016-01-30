@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -7,23 +7,15 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/B-24-Liberator/Models/Liveries", 10);
-
       var self = cmdarg();
-
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
-      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
-      
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
-      crew_door.alias(float_0);
-      passenger_door.alias(float_1);
+      var bomb_door = self.getNode("sim/model/door-positions/bomb/position-norm", 1);
+      bomb_door.alias(float_0);
     </load>
 
     <unload>
       livery_update.stop();
-      crew_door.unalias();
-      passenger_door.unalias();
+      bomb_door.unalias();
     </unload>
   </nasal>
 
@@ -267,7 +259,7 @@
     </offsets>
   </model>
 
-  <!-- Intérieur -->
+  <!-- IntÃ©rieur -->
   <model>
     <name>Interieur</name>
     <path>Aircraft/B-24-Liberator/Models/Interior/interior.xml</path>
@@ -392,7 +384,7 @@
     </offsets>
   </model>
 
-  <!-- Les hélices --> 
+  <!-- Les hÃ©lices --> 
   <animation>
     <name>HeliceCompleteGE</name>
     <object-name>propdiscGE</object-name>
@@ -401,7 +393,7 @@
     <object-name>bolGE</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- SÃ©lection de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscGE</object-name>
@@ -472,7 +464,7 @@
     <object-name>bolGI</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- SÃ©lection de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscGI</object-name>
@@ -543,7 +535,7 @@
     <object-name>bolDI</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- SÃ©lection de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscDI</object-name>
@@ -614,7 +606,7 @@
     <object-name>bolDE</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- SÃ©lection de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscDE</object-name>
@@ -792,7 +784,7 @@
     </axis>
   </animation>
 
-  <!-- Rentré des roues -->
+  <!-- RentrÃ©e des roues -->
   <animation>
     <name>TrainAvant</name>
     <object-name>roueA</object-name>
@@ -1045,7 +1037,7 @@
     </axis>
   </animation>
 
-  <!-- Soute à bombes -->
+  <!-- Soute Ã  bombes -->
   <animation>
     <name>ToutesLesSoutes</name>
     <object-name>souteG1</object-name>
@@ -1071,7 +1063,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteG1</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/model/door-positions/bomb/position-norm</property>
     <factor> 120 </factor>
     <axis>
       <x1-m> -1.880 </x1-m>
@@ -1086,7 +1078,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteG2</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/model/door-positions/bomb/position-norm</property>
     <factor> 120 </factor>
     <axis>
       <x1-m>  0.968 </x1-m>
@@ -1101,7 +1093,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteD1</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/model/door-positions/bomb/position-norm</property>
     <factor> -120 </factor>
     <axis>
       <x1-m> -1.880 </x1-m>
@@ -1116,7 +1108,7 @@
   <animation>
     <type>rotate</type>
     <object-name>souteD2</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/model/door-positions/bomb/position-norm</property>
     <factor> -120 </factor>
     <axis>
       <x1-m>  0.968 </x1-m>
