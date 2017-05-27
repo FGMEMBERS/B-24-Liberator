@@ -9,6 +9,19 @@
     <flight-model>yasim</flight-model>
     <aero>b24-yasim</aero>
 
+    <tags>
+      <tag>consolidated</tag>
+      <tag>mid-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>four-engine</tag>
+      <tag>fixed-pitch</tag>
+      <tag>piston</tag>
+      <tag>h-tail</tag>
+      <tag>bomber</tag>
+      <tag>ww2</tag>
+    </tags>
+
   </sim>
 
 </PropertyList>
