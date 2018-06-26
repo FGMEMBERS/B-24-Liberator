@@ -41,5 +41,23 @@
     </condition>
   </animation>
 
+  <pitch>sim/model/turret[0]/pitch</pitch>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>guns</object-name>
+    <property alias="../../pitch"/>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>  
+      <z>0</z>
+    </axis>
+  </animation>
+
 </PropertyList>
 

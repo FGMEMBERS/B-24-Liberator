@@ -135,6 +135,7 @@
     <b24>
       <file>Aircraft/B-24-Liberator/Nasal/liveries.nas</file>
       <file>Aircraft/B-24-Liberator/Nasal/light.nas</file>
+      <file>Aircraft/B-24-Liberator/Nasal/turrets.nas</file>
     </b24>
   </nasal>
 
