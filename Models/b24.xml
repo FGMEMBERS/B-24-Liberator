@@ -1179,6 +1179,9 @@
   <!-- Noze -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[4]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m> -10.158 </x-m>
       <y-m>   0.000 </y-m>
@@ -1187,9 +1190,39 @@
     </offsets>
   </model>
 
+
   <!-- Turet -->
+  <animation>
+    <name>Tourelle_de_Toit</name>
+    <object-name>vitretourelle</object-name>
+    <object-name>tourelle</object-name>
+    <object-name>Gun_Tourelle_Toit</object-name>
+    <object-name>Gun_Tourelle_Toit2</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Tourelle_de_Toit</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <offset-deg>180</offset-deg>
+    <center>
+      <x-m>-4.403</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
   <model>
+    <name>Gun_Tourelle_Toit</name>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[0]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m> -4.02240 </x-m>
       <y-m> -0.17000 </y-m>
@@ -1200,7 +1233,11 @@
   </model>
 
   <model>
+    <name>Gun_Tourelle_Toit2</name>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[0]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m> -4.02240 </x-m>
       <y-m>  0.17000 </y-m>
@@ -1213,6 +1250,9 @@
   <!-- Tail -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[1]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m> 10.21776 </x-m>
       <y-m> -0.15700 </y-m>
@@ -1224,6 +1264,9 @@
 
   <model>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[1]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m> 10.21776 </x-m>
       <y-m>  0.15700 </y-m>
@@ -1236,6 +1279,9 @@
   <!-- Left side -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[2]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m>  3.95860 </x-m>
       <y-m> -1.12824 </y-m>
@@ -1248,6 +1294,9 @@
   <!-- Right side -->
   <model>
     <path>Aircraft/B-24-Liberator/Models/Guns/guns.xml</path>
+    <overlay>
+      <pitch>sim/model/turret[3]/pitch</pitch>
+    </overlay>
     <offsets>
       <x-m>  3.95860 </x-m>
       <y-m>  1.12824 </y-m>
